@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.loginController" spacing="20" VBox.vgrow="ALWAYS" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+    <children>
+        <TextField editable="false" text="Acme Distributing">
+            <font>
+                <Font size="40" />
+            </font>
+        </TextField>
+
+        <Text text="Order Management" textAlignment="CENTER">
+            <font>
+                <Font size="24" />
+            </font>
+        </Text>
+
+        <Label fx:id="printResult" />
+
+        <VBox spacing="10" maxWidth="400">
+            <children>
+                <Label text="Username" />
+                <TextField fx:id="username_textField" />
+
+                <Label text="Password" />
+                <PasswordField fx:id="password_textField" />
+
+                <Button fx:id="loginButton" text="Login" onAction="#login" style="-fx-padding: 10;" />
+            </children>
+        </VBox>
+    </children>
+</VBox>

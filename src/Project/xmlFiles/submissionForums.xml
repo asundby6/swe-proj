@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<submissionForums>
+    <newCustomer>
+        <customerName type="string"></customerName>
+        <customerAddress type="string"></customerAddress>
+        <customerCity type="string"></customerCity>
+        <customerState type="string"></customerState>
+        <customerZip type="string"></customerZip>
+        <beerLicense type="integer"></beerLicense>
+        <form_ofPayment type="string"></form_ofPayment>
+        <capability_loadingDock type="boolean"></capability_loadingDock>
+        <deliveryConstraints type="string"></deliveryConstraints>
+    </newCustomer>
+    <newOrder>
+        <order_accountID type="string"></order_accountID>
+        <order_deliveryDate type="string"></order_deliveryDate>
+        <sales_repID type="string"></sales_repID>
+        <delivery_repID type="string"></delivery_repID>
+        <Items>
+            <itemName type="string"></itemName>
+            <itemQuantity type="integer"></itemQuantity>
+        </Items>
+    </newOrder>
+</submissionForums>

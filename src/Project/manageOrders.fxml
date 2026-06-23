@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.manageOrders" spacing="0" VBox.vgrow="ALWAYS">
+    <children>
+        <HBox spacing="10" style="-fx-border-color: #cccccc; -fx-border-width: 0 0 1 0;">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <children>
+                <Button fx:id="main_menuButton" text="Main Menu" onAction="#main_menuClicked" />
+                <Region HBox.hgrow="ALWAYS" />
+                <TextField fx:id="titleField" text="Manage Orders" editable="true" prefWidth="300">
+                    <font>
+                        <Font size="24" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+
+        <VBox spacing="10" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <children>
+                <ListView fx:id="ordersListView" VBox.vgrow="ALWAYS" />
+
+                <HBox spacing="8">
+                    <children>
+                        <Button fx:id="saveButton" text="Save" onAction="#save_buttonClicked" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="deleteButton" text="Delete" onAction="#delete_buttonClicked" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>
