@@ -1,6 +1,6 @@
 # Acme Distributing — Order Management System
 
-A JavaFX desktop application built for distribution company sales representatives to manage delivery orders, customers, and product catalog data. Developed as a semester-long Software Engineering team project.
+A JavaFX desktop application built for distribution company sales representatives to manage delivery orders, customers, and product catalog data. Developed as a semester-long Software Engineering project.
 
 ---
 
